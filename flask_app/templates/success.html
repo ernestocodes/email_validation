@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            background-color:green;
+            border: 2px solid black;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class ="container">
+        <h1>The email address you entered () is a VALID email address! Thank you!</h1>
+    </div>
+    <div>
+        <h1>Email Addresses Entered:</h1>
+        {% for email in emails %}
+            <p>{{email.email}}  | {{email.created_at}}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>
