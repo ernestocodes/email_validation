@@ -1,5 +1,4 @@
 from pydoc import render_doc
-
 from flask import render_template
 from flask_app import app
 from flask_app.models.email import Email
